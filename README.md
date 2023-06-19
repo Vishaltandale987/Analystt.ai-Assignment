@@ -22,4 +22,4 @@ This is a bookstore application. Here you can do all the CRUD operations.
 
 ## Site Overview
 ### Landing Page
-![image](https://res.cloudinary.com/dd9cmhunr/image/upload/v1686813454/Screenshot_585_awkoe0.png)
+![image](https://res.cloudinary.com/dd9cmhunr/image/upload/v1687162697/Screenshot_589_oa0y0e.png)
