@@ -36,7 +36,7 @@ function Inventry() {
   const getPost = async () => {
     try {
       const res = await axios(
-        `http://localhost:8088/book/${selectedGenresValue}/${selected_PriceValue}/${selected_PublisherValue}`
+        `https://analystt-ai-server.vercel.app/book/${selectedGenresValue}/${selected_PriceValue}/${selected_PublisherValue}`
       );
       setBookdata(res.data);
     } catch (error) {
@@ -46,8 +46,8 @@ function Inventry() {
   // console.log(search)
   const getSearchPost = async () => {
     try {
-      const res = await axios(`http://localhost:8088/book/search/${search}`);
-      console.log(res.data)
+      const res = await axios(`https://analystt-ai-server.vercel.app/book/search/${search}`);
+    
       setsearchdata(res.data);
     } catch (error) {
       console.log(error);
@@ -73,7 +73,9 @@ function Inventry() {
   }, [selectedGenresValue, selected_PriceValue, selected_PublisherValue]);
 
   useEffect(() => {
-    getSearchPost();
+    if(search !== ""){
+      getSearchPost();
+    }
   }, [search]);
 
   return (

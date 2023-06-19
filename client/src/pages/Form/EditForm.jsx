@@ -27,10 +27,10 @@ function EditForm({ post_Id,get_data_by_id,onClose }) {
     }, {});
 
   const handle_post_submiting_from = async () => {
-    // console.log(result);
+   
     try {
       let res = await axios.put(
-        `http://localhost:8088/book/${post_Id}`,
+        `https://analystt-ai-server.vercel.app/book/${post_Id}`,
         result
       );
       toast({

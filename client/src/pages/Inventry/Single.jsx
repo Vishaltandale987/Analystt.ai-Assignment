@@ -30,7 +30,7 @@ function Single() {
 
   const get_data_by_id = async () => {
     try {
-      const res = await axios(`http://localhost:8088/book/${post_Id}`);
+      const res = await axios(`https://analystt-ai-server.vercel.app/book/${post_Id}`);
       setPost(res.data);
     } catch (error) {
       console.log(error);
@@ -43,7 +43,7 @@ function Single() {
 
   const handle_book_delete = async () => {
     try {
-      const res = await axios.delete(`http://localhost:8088/book/${post?._id}`);
+      const res = await axios.delete(`https://analystt-ai-server.vercel.app/book/${post?._id}`);
      console.log(res)
       toast({
         title: `${res.data}`,

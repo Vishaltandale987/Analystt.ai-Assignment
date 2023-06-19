@@ -51,7 +51,7 @@ function Addform({close,getPost}) {
 
   const handle_post_submiting_from = async () => {
     try {
-      let res = await axios.post("http://localhost:8088/book", formData);
+      let res = await axios.post("https://analystt-ai-server.vercel.app/book", formData);
       toast({
         title: `${res.data}`,
         status: 'success',
