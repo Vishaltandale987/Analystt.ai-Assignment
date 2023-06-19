@@ -1,7 +1,7 @@
 # Analystt.ai-Assignment
 
 
-This is a bookstore application. Here you can do all the CRUD operations.
+This is a bookstore application. Here I have implemented search functionality, filter functionality and user can also add books, delete books, edit books.
 
 [Frontend](https://analystt-ai-assignment-pc5y.vercel.app/) - Deployed Link <br />
 [Backend](https://analystt-ai-server.vercel.app/) - Deployed Link
