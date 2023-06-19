@@ -17,7 +17,7 @@ function Add_Book({getPost}) {
 
   return (
     <div>
-        <Button onClick={onOpen} colorScheme='whatsapp' p={5} mb={10}> + Add New Car</Button>
+        <Button onClick={onOpen} colorScheme='whatsapp' p={5} mb={10}> + Add New Book</Button>
 
        <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
