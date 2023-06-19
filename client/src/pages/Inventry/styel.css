@@ -1,0 +1,188 @@
+.share {
+  width: 100%;
+  border-radius: 10px;
+  /* -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68); */
+}
+
+.shareWrapper {
+  padding: 10px;
+}
+
+.shareTop {
+  display: flex;
+  align-items: center;
+}
+
+.shareProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.shareInput {
+  border: 1px solid black;
+  width: 50%;
+
+  margin-right: 20px;
+}
+.input_form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.shareInput:focus {
+  outline: none;
+}
+
+.shareHr {
+  margin: 20px;
+}
+
+.shareBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shareOptions {
+  display: flex;
+  margin-left: 20px;
+}
+
+.shareOption {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.shareIcon {
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.shareOptionText {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.shareButton {
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: green;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+  width: 100px;
+}
+
+.shareImgContainer {
+  padding: 0 20px 10px 20px;
+  position: relative;
+}
+
+.shareImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.shareCancelImg {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#secondcarInventrys {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ border-radius: 10px;
+}
+.editanddelete{
+
+  float: right;
+  gap: 10px;
+  display: flex;
+  padding: 10px;
+}
+.singlediv {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-family: inherit;
+  font-size: 25px;
+  color: gray;
+}
+
+#secondcarInventry {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.filter {
+  display: flex;
+  gap: 30px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+.flttertag {
+  width: 200px;
+}
+
+.filters {
+  border: 2px solid black;
+}
+
+@media  (min-width: 0px) and (max-width: 400px){
+  .filter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    width: 50%;
+    margin-left: 2em;
+
+  }
+
+
+
+  #secondcarInventry {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  
+    gap: 30px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 760px) {
+  .filter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  #secondcarInventry {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    gap: 30px;
+  }
+}
